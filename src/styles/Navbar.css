@@ -1,0 +1,21 @@
+.nav-bar{
+    background-color: var(--dark-gray);
+    display: flex;
+}
+
+.nav-bar-list{
+    list-style-type: none;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: var(--white)
+}
+.nav-link:visited{
+    color: var(--white)
+}
+
+.list-item{
+    display: inline-block;
+    margin: 0 10px 0 10px
+}
