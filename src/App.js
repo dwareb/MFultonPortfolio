@@ -12,6 +12,7 @@ function App() {
     <div className="main-window">
       <Router>
         <Navbar />
+        <div className='main-area'>
         <Routes>
           <Route path="/" element={<About />} />
           <Route path="About" element={<About />} />
@@ -19,6 +20,7 @@ function App() {
           <Route path="Projects" element={<Projects />} />
           <Route path="Contact" element={<Contact />} />
         </Routes>
+        </div>
       </Router>
     </div>
   );

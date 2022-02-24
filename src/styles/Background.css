@@ -11,4 +11,15 @@
     var(--khaki) 95%,
     var(--dark-khaki) 95%
   );
+  min-height: 100vh;
+}
+
+.main-area{
+  margin-top: 70px;
+}
+
+@media screen and (max-width: 900px) {
+  .main-area{
+    margin-top: 0px;
+  }
 }
