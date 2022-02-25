@@ -15,22 +15,22 @@ const Navbar = () => {
       <img src={icon} height="50" className="nav-logo" alt="Mike Fulton Logo" title="Logo"/>
       <ul className={(expand ? "active " : "") + "nav-menu navbar-nav mr-auto"}>
         <li className="list-item">
-          <NavLink className="nav-link" to="/" onClick={closeMenu}>
+          <NavLink className="nav-link" to="/MFultonPortfolio/" onClick={closeMenu}>
             About
           </NavLink>
         </li>
         <li className="list-item">
-          <NavLink className="nav-link" to="previouswork" onClick={closeMenu}>
+          <NavLink className="nav-link" to="/MFultonPortfolio/previouswork" onClick={closeMenu}>
             Previous Work
           </NavLink>
         </li>
         <li className="list-item">
-          <NavLink className="nav-link" to="projects" onClick={closeMenu}>
+          <NavLink className="nav-link" to="/MFultonPortfolio/projects" onClick={closeMenu}>
             Projects
           </NavLink>
         </li>
         <li className="list-item">
-          <NavLink className="nav-link" to="contact" onClick={closeMenu}>
+          <NavLink className="nav-link" to="/MFultonPortfolio/contact" onClick={closeMenu}>
             Contact
           </NavLink>
         </li>
