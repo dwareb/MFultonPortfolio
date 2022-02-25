@@ -14,11 +14,11 @@ function App() {
         <Navbar />
         <div className='main-area'>
         <Routes>
-          <Route path="/" element={<About />} />
-          <Route path="About" element={<About />} />
-          <Route path="previouswork" element={<PreviousWork />} />
-          <Route path="Projects" element={<Projects />} />
-          <Route path="Contact" element={<Contact />} />
+          <Route path="/MFultonPortfolio/" element={<About />} />
+          <Route path="/MFultonPortfolio/About" element={<About />} />
+          <Route path="/MFultonPortfolio/previouswork" element={<PreviousWork />} />
+          <Route path="/MFultonPortfolio/Projects" element={<Projects />} />
+          <Route path="/MFultonPortfolio/Contact" element={<Contact />} />
         </Routes>
         </div>
       </Router>
