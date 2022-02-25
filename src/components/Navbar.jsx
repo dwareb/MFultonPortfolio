@@ -10,7 +10,7 @@ const Navbar = () => {
   const closeMenu = () => setExpand(false)
 
   return (
-    <nav className="navbar nav-bar">
+    <nav className="navbar nav-bar base">
       <img src={icon} height="50" className={(expand ? "active " : "") + "mobile-logo"} alt="Mike Fulton Logo" title="Logo" onClick={handleExpand}/>
       <img src={icon} height="50" className="nav-logo" alt="Mike Fulton Logo" title="Logo"/>
       <ul className={(expand ? "active " : "") + "nav-menu navbar-nav mr-auto"}>
