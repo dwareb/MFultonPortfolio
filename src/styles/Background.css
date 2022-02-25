@@ -1,0 +1,26 @@
+.main-window {
+  background: linear-gradient(
+    to right,
+    var(--dark-khaki),
+    var(--dark-khaki) 5%,
+    var(--khaki) 5%,
+    var(--khaki) 10%,
+    var(--light-khaki) 10%,
+    var(--light-khaki) 90%,
+    var(--khaki) 90%,
+    var(--khaki) 95%,
+    var(--dark-khaki) 95%
+  );
+  min-height: calc(100vh - 70px);
+}
+
+.main-area{
+  margin-top: 70px;
+}
+
+@media screen and (max-width: 800px) {
+  .main-area{
+    margin-top: 0px;
+    min-height: calc(100vh - 70px);
+  }
+}

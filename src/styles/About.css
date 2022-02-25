@@ -1,0 +1,42 @@
+.about-frame {
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+}
+
+.header {
+  font-weight: 900;
+  font-size: 4em;
+}
+
+.article-area {
+  margin: auto;
+  max-width: 70%;
+}
+
+.article-sub-area {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.welcome-article{
+  max-width: 900px;
+  margin: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .article-area{
+    margin-top: 20px;
+  }
+  .article-sub-area {
+    grid-template-columns: 100%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .article-area{
+    margin-top: 20px;
+    max-width: 95%;
+  }
+}
