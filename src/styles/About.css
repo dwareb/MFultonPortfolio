@@ -6,6 +6,14 @@
   row-gap: 10px;
 }
 
+.article-text {
+  text-align: left;
+}
+
+.article-image {
+  border-radius: 10px;
+}
+
 .header {
   font-weight: 900;
   font-size: 4em;
@@ -21,13 +29,13 @@
   grid-template-columns: 50% 50%;
 }
 
-.welcome-article{
+.welcome-article {
   max-width: 900px;
   margin: auto;
 }
 
 @media screen and (max-width: 1200px) {
-  .article-area{
+  .article-area {
     margin-top: 20px;
   }
   .article-sub-area {
@@ -35,7 +43,7 @@
   }
 }
 @media screen and (max-width: 900px) {
-  .article-area{
+  .article-area {
     margin-top: 20px;
     max-width: 95%;
   }
