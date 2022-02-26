@@ -12,14 +12,15 @@
     var(--dark-khaki) 95%
   );
   min-height: calc(100vh - 70px);
+  overflow: hidden;
 }
 
-.main-area{
+.main-area {
   margin-top: 70px;
 }
 
 @media screen and (max-width: 800px) {
-  .main-area{
+  .main-area {
     margin-top: 0px;
     min-height: calc(100vh - 70px);
   }

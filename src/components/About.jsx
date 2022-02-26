@@ -8,7 +8,7 @@ import '../styles/About.css';
 import '../styles/Global.css';
 import '../styles/Background.css';
 import Article from './Article';
-import ArticleDark from './ArticleDark'
+import ArticleDark from './ArticleDark';
 
 const About = () => {
   return (
@@ -46,7 +46,10 @@ const About = () => {
               things that need making and fixing.
             </p>
           </ArticleDark>
-          <ArticleDark className="article-body" heading="Seriously, lots of things">
+          <ArticleDark
+            className="article-body"
+            heading="Seriously, lots of things"
+          >
             <img
               className="article-image"
               src={beholder}

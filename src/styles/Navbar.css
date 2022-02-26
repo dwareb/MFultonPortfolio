@@ -55,10 +55,10 @@
   .nav-logo {
     display: none;
   }
-  
+
   .nav-bar {
     width: 100%;
-    position:relative;
+    position: relative;
   }
 
   .nav-menu {
@@ -81,7 +81,6 @@
     transition: all 0.5s ease;
     z-index: 1;
   }
-
 
   .nav-link:hover {
     color: var(--light-blue);

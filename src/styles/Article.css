@@ -1,4 +1,4 @@
-.article-container{
+.article-container {
   background-color: var(--white);
   border-radius: 10px;
   padding: 5px 15px 5px 15px;
@@ -6,11 +6,11 @@
   box-shadow: 3px 3px 2px black;
 }
 
-.title-area{
+.title-area {
   text-align: center;
   font-size: 2.5em;
 }
 
-.article-content{
+.article-content {
   font-size: 1.3em;
 }

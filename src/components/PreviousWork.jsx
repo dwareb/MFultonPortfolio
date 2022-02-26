@@ -4,7 +4,7 @@ import ArticleDark from './ArticleDark';
 import '../styles/PreviousWork.css';
 import intellogo from '../images/intellogo.png';
 import psulogo from '../images/psu.png';
-import mflogo from '../images/mflogodark2.png'
+import mflogo from '../images/mflogodark2.png';
 
 const PreviousWork = () => {
   return (
@@ -44,7 +44,10 @@ const PreviousWork = () => {
               After High School I went to PCC and began work on a CS degree.
               Running out of money, I decided to go into work as a technician.
               Since then I decided to finish up a Bachelor's Degree in Computer
-              Science. But here's my relevant credentials:
+              Science. Since returning to school in 2020 after about a 10 year
+              hiatus, I've maintained straight A's across all my classes despite
+              working full time along with the coursework. But here's my
+              relevant credentials:
             </p>
             <h3 style={{ fontWeight: 700 }}>Portland Community College:</h3>
             <p>
@@ -97,7 +100,7 @@ const PreviousWork = () => {
               <li>Cooking</li>
               <li>Dungeon Mastering</li>
             </ul>
-                        <img
+            <img
               className="resume-img"
               src={mflogo}
               alt="Mike Fulton Logo"
