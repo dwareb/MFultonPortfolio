@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/MFultonPortfolio/static/css/main.53f1930d.css",
-    "main.js": "/MFultonPortfolio/static/js/main.40a1ddec.js",
+    "main.css": "/MFultonPortfolio/static/css/main.6acb1662.css",
+    "main.js": "/MFultonPortfolio/static/js/main.c2d01584.js",
     "static/js/787.4feaa52d.chunk.js": "/MFultonPortfolio/static/js/787.4feaa52d.chunk.js",
     "static/media/portrait.png": "/MFultonPortfolio/static/media/portrait.994c9cbc5b325043cdc8.png",
     "static/media/soldering.jpg": "/MFultonPortfolio/static/media/soldering.0dd4a7774c35ef37fb9f.jpg",
@@ -11,12 +11,12 @@
     "static/media/mflogolight.png": "/MFultonPortfolio/static/media/mflogolight.50354fd209b40b62378b.png",
     "static/media/intellogo.png": "/MFultonPortfolio/static/media/intellogo.edee48ec709b6c80b5f9.png",
     "index.html": "/MFultonPortfolio/index.html",
-    "main.53f1930d.css.map": "/MFultonPortfolio/static/css/main.53f1930d.css.map",
-    "main.40a1ddec.js.map": "/MFultonPortfolio/static/js/main.40a1ddec.js.map",
+    "main.6acb1662.css.map": "/MFultonPortfolio/static/css/main.6acb1662.css.map",
+    "main.c2d01584.js.map": "/MFultonPortfolio/static/js/main.c2d01584.js.map",
     "787.4feaa52d.chunk.js.map": "/MFultonPortfolio/static/js/787.4feaa52d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.53f1930d.css",
-    "static/js/main.40a1ddec.js"
+    "static/css/main.6acb1662.css",
+    "static/js/main.c2d01584.js"
   ]
 }
