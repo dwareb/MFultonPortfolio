@@ -21,7 +21,7 @@ const Navbar = () => {
         </li>
         <li className="list-item">
           <NavLink className="nav-link" to="/MFultonPortfolio/previouswork" onClick={closeMenu}>
-            Previous Work
+            Previous Work / Resume
           </NavLink>
         </li>
         <li className="list-item">

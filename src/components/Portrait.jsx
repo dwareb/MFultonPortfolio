@@ -7,10 +7,9 @@ const Portrait = ({ picture, alt_text, title_text, size }) => {
     <div className="main-container">
       <div className="outer-container">
         <div className="inner-ring">
-          <div
-            className="inner-container"
-            style={{ padding: size / 2 + 10 }}
-          ></div>
+          <div className="inner-container">
+            <div className='gear-center' style={{width:size,height:size}}/>
+          </div>
         </div>
       </div>
       <img
