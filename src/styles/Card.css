@@ -1,0 +1,63 @@
+.card-main{
+  display: grid;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  max-width: 350px;
+  word-wrap: break-word;
+  background-color: var(--white);
+  background-clip: border-box;
+  border: 1px solid var(--dark-gray);
+  box-shadow: 3px 3px 2px var(--dark-gray);
+  overflow: hidden;
+  color: var(--dark-gray);
+  height: 500px;
+  grid-template-rows: 30px 250px 170px 20px;
+  margin: 10px;
+}
+
+.card-body{
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  padding: 10px;
+}
+
+.card-title{
+  font-size: 1.25em;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+
+.card-image{
+  box-sizing: content-box;
+  max-width: 250px;
+  height: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.card-image:hover{
+  cursor: pointer;
+  border: 3px solid var(--light-blue);
+}
+
+.card-link{
+  text-align: center;
+  border-radius: 5px;
+  padding: 0 10px 0 10px;
+  margin: auto;
+  text-decoration: none;
+  color: var(--light-blue);
+  background-color: var(--dark-gray);
+  font-size: 1.5em;
+}
+
+.card-link:visited{
+  color:none;
+}
+
+.card-link:hover{
+  color: var(--white);
+}

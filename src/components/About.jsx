@@ -1,9 +1,6 @@
 import React from 'react';
 import Portrait from './Portrait';
 
-import portrait_pic from '../images/portrait.png';
-import beholder from '../images/beholder.jpg';
-import soldering from '../images/soldering.jpg';
 import '../styles/About.css';
 import '../styles/Global.css';
 import '../styles/Background.css';
@@ -12,11 +9,11 @@ import ArticleDark from './ArticleDark';
 
 const About = () => {
   return (
-    <div className="about-frame base">
+    <div className="main-area about-frame base">
       <h1 className="header">&gt;Michael Fulton_</h1>
       <Portrait
         className="portrait"
-        picture={portrait_pic}
+        picture={process.env.PUBLIC_URL + '/images/portrait.png'}
         alt_text="Portrait of Mike Fulton"
         title_text="Mike Fulton"
         size={250}
@@ -35,7 +32,7 @@ const About = () => {
           <ArticleDark className="article-body" heading="I make things">
             <img
               className="article-image"
-              src={soldering}
+              src={process.env.PUBLIC_URL + '/images/soldering.jpg'}
               alt="Picture of soldering macro pad"
               text="Macro Pad Soldering"
               height={250}
@@ -52,7 +49,7 @@ const About = () => {
           >
             <img
               className="article-image"
-              src={beholder}
+              src={process.env.PUBLIC_URL + '/images/beholder.jpg'}
               alt="Painted Miniature Beholder"
               text="Beholder"
               height={250}

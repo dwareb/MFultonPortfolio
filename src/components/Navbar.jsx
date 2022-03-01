@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import '../styles/Navbar.css';
-import icon from '../images/mflogolight.png';
 
 const Navbar = () => {
   const [expand, setExpand] = useState(false);
@@ -12,7 +11,7 @@ const Navbar = () => {
   return (
     <nav className="navbar nav-bar base">
       <img
-        src={icon}
+        src={process.env.PUBLIC_URL + '/images/mflogolight.png'}
         height="50"
         className={(expand ? 'active ' : '') + 'mobile-logo'}
         alt="Mike Fulton Logo"
@@ -20,7 +19,7 @@ const Navbar = () => {
         onClick={handleExpand}
       />
       <img
-        src={icon}
+        src={process.env.PUBLIC_URL + '/images/mflogolight.png'}
         height="50"
         className="nav-logo"
         alt="Mike Fulton Logo"
