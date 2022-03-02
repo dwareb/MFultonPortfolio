@@ -1,0 +1,27 @@
+.slide-show{
+  display: grid;
+  grid-template-rows: 100;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-image{
+  width: 100vh;
+  max-width: 100vw;
+}
+
+.slide-port{
+  display: grid;
+  align-items: center;
+  margin:auto;
+}
+
+.thumbs-box{
+  position: absolute;
+  display: grid;
+  width: 100%;
+  top: 80%;
+}
+.slide-thumbnails{
+  margin: auto;
+}

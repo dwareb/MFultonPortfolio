@@ -2,20 +2,17 @@ import React from 'react';
 import Article from './Article';
 import ArticleDark from './ArticleDark';
 import '../styles/PreviousWork.css';
-import intellogo from '../images/intellogo.png';
-import psulogo from '../images/psu.png';
-import mflogo from '../images/mflogodark2.png';
 
 const PreviousWork = () => {
   return (
-    <div className="prev-work-window">
-      <div className="work-area">
+    <div className="prev-work-window main-area">
+      <section className="work-area">
         <div className="column">
           <ArticleDark className="article-body" heading="Work Experience">
             <p>For the last 10 years I've worked for Intel here in Oregon.</p>
             <img
               className="resume-img"
-              src={intellogo}
+              src={process.env.PUBLIC_URL + '/images/intellogo.png'}
               alt="Intel Corporate Logo"
               text="Intel"
               style={{ width: 200 }}
@@ -23,20 +20,23 @@ const PreviousWork = () => {
             <p>
               Starting out I worked in the chip factory as a technician where I
               learned tons of skills running performing maintenance on equipment
-              in a cutting edge semiconductor factory.
+              in a cutting edge semiconductor factory. Job duties were varied,
+              but included operations, maintenance, troubleshooting, creating
+              reports, procedures.
             </p>
             <p>
               After about 4 years working in the factory I was looking for a
               change of pase, and got a job in the Automation department doing
               technical support for the software that the factory is built on.
               Here I learned how to troubleshoot a vast array of issues on
-              software systems as diverse as you might imagine. Databases,
-              networking, and custom software that is under constant
-              development.
-            </p>
-            <p>
-              In addition to technical skills, I'm a team leader, trainer,
-              herder of cats, both fuzzy and human.
+              software systems as diverse as you might imagine. Systems include
+              databases, networking, and custom software that is under constant
+              development of all varieties within a semiconductor factory. Here
+              I am team lead, and have been responsible for personally training
+              my entire shift up to being extremely successful. Additionally
+              I've driven cultural changes that empower my co-workers to be able
+              to more effectively execute on their job via elimination of siloed
+              knowledge and skills.
             </p>
           </ArticleDark>
           <Article className="article-body" heading="Education">
@@ -56,7 +56,7 @@ const PreviousWork = () => {
             </p>
             <img
               className="resume-img"
-              src={psulogo}
+              src={process.env.PUBLIC_URL + '/images/psu.png'}
               alt="Portland State University Logo"
               text="Portland State University"
               style={{ width: 300 }}
@@ -102,7 +102,7 @@ const PreviousWork = () => {
             </ul>
             <img
               className="resume-img"
-              src={mflogo}
+              src={process.env.PUBLIC_URL + '/images/mflogodark2.png'}
               alt="Mike Fulton Logo"
               text="MF logo"
               style={{ width: 100 }}
@@ -118,7 +118,7 @@ const PreviousWork = () => {
             </p>
           </ArticleDark>
         </div>
-      </div>
+      </section>
     </div>
   );
 };
