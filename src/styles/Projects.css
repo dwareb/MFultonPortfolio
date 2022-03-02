@@ -12,8 +12,16 @@
 .card-grid{
   display: grid;
   justify-content: center;
-  grid-template-columns: 30% 30% 30%;
+  grid-template-columns: 25% 25% 25% 25%;
 }
+
+
+@media screen and (max-width: 1600px) {
+  .card-grid{
+    grid-template-columns: 33% 33% 33%;
+  }
+}
+
 
 @media screen and (max-width: 1200px) {
   .card-grid{

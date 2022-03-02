@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/Card.css';
 import Modal from './Modal';
-import CardImage from './CardImage';
+import Slideshow from './Slideshow';
 
 const Card = ({ children, extra_style = '', content }) => {
   const [openModal, setOpenModal] = useState(false);
@@ -12,8 +12,8 @@ const Card = ({ children, extra_style = '', content }) => {
       {content.images ? (
         <img
           className="card-image"
-          src={process.env.PUBLIC_URL + content.images[0]}
-          alt={content.title}
+          src={process.env.PUBLIC_URL + content.images[0].src}
+          alt={content.images[0].alt}
           title={content.title}
           onClick={() => {
             setOpenModal(true);
@@ -30,7 +30,16 @@ const Card = ({ children, extra_style = '', content }) => {
       ) : (
         ''
       )}
-      {openModal ? <Modal setOpenModal={setOpenModal}></Modal> : ''}
+      {openModal ? (
+        <Modal setOpenModal={setOpenModal}>
+          <Slideshow content={content}></Slideshow>
+          {/* {content.images.map((image) => (
+              <img className='slide-card' src={process.env.PUBLIC_URL + image.src} alt={image.alt}></img>
+          ))} */}
+        </Modal>
+      ) : (
+        ''
+      )}
       {children}
     </div>
   );

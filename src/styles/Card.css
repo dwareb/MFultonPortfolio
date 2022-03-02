@@ -1,8 +1,8 @@
 .card-main{
-  display: grid;
-  border-radius: 5px;
   align-items: center;
   justify-content: center;
+  display: grid;
+  border-radius: 5px;
   max-width: 350px;
   word-wrap: break-word;
   background-color: var(--white);
@@ -16,13 +16,6 @@
   margin: 10px;
 }
 
-.card-body{
-  display: flex;
-  flex-direction: column;
-  flex: 1 1 auto;
-  padding: 10px;
-}
-
 .card-title{
   font-size: 1.25em;
   font-weight: bold;
@@ -32,6 +25,7 @@
 
 .card-image{
   box-sizing: content-box;
+  margin:auto;
   max-width: 250px;
   height: auto;
   margin-top: 25px;
