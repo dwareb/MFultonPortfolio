@@ -1,6 +1,6 @@
 .modal-pop{
   position: fixed;
-  z-index: 10;
+  z-index: 7;
   background-color: rgba(0,0,0,0.6);
   left: 0;
   top: 0;
@@ -20,43 +20,4 @@
   top: 0;
   height: 100%;
   width: 100%;
-}
-
-.close-button{
-  z-index: 1;
-  position: fixed;
-  border: 4px solid var(--dark-gray);
-  top:90%;
-  left:50%;
-  transform: translate(-50%);
-  font-size: 2.5em;
-  background-color: var(--white);
-  color: var(--dark-gray);
-  padding: 0px 10px 0px 10px;
-  border-radius: 15px;
-  font-weight: 700;
-}
-
-.close-button:hover{
-  background-color: var(--light-blue);
-}
-
-.close-button:active{
-  border: 4px solid var(--light-blue);
-  background-color: var(--dark-gray);
-  color: var(--white)
-}
-
-@media screen and (max-width: 700px){
-    .close-button{
-      font-size: 1.5em;
-      top: 92%
-    }
-}
-
-@media screen and (max-height: 1000px){
-    .close-button{
-      font-size: 1.5em;
-      top: 92%
-    }
 }

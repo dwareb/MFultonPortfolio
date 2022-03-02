@@ -6,13 +6,13 @@ import '../styles/PreviousWork.css';
 const PreviousWork = () => {
   return (
     <div className="prev-work-window main-area">
-      <div className="work-area">
+      <section className="work-area">
         <div className="column">
           <ArticleDark className="article-body" heading="Work Experience">
             <p>For the last 10 years I've worked for Intel here in Oregon.</p>
             <img
               className="resume-img"
-              src={process.env.PUBLIC_URL + "/images/intellogo.png"}
+              src={process.env.PUBLIC_URL + '/images/intellogo.png'}
               alt="Intel Corporate Logo"
               text="Intel"
               style={{ width: 200 }}
@@ -118,7 +118,7 @@ const PreviousWork = () => {
             </p>
           </ArticleDark>
         </div>
-      </div>
+      </section>
     </div>
   );
 };

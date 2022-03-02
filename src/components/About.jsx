@@ -19,16 +19,16 @@ const About = () => {
         size={250}
       />
       <div className="article-area">
-        <div className="welcome-article">
+        <section className="welcome-article">
           <Article className="article-body" heading="Hello!">
             <p className="article-text">
               I'm an aspiring Software Engineer, professional issue fixer, and
-              jack of all trades. Take a peek at the previous work / resume
-              section for some of my credentials.
+              maker. Take a peek at the previous work / resume section for some
+              of my credentials.
             </p>
           </Article>
-        </div>
-        <div className="article-sub-area">
+        </section>
+        <section className="article-sub-area">
           <ArticleDark className="article-body" heading="I make things">
             <img
               className="article-image"
@@ -60,7 +60,7 @@ const About = () => {
               projects area for a sampling of some of the things I've made.
             </p>
           </ArticleDark>
-        </div>
+        </section>
       </div>
     </div>
   );

@@ -16,9 +16,12 @@
   margin:auto;
 }
 
-.slide-thumbnails{
+.thumbs-box{
   position: absolute;
+  display: grid;
+  width: 100%;
   top: 80%;
-  left: 50%;
-  transform: translate(-50%)
+}
+.slide-thumbnails{
+  margin: auto;
 }

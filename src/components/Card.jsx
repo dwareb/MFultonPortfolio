@@ -33,9 +33,7 @@ const Card = ({ children, extra_style = '', content }) => {
       {openModal ? (
         <Modal setOpenModal={setOpenModal}>
           <Slideshow content={content}></Slideshow>
-          {/* {content.images.map((image) => (
-              <img className='slide-card' src={process.env.PUBLIC_URL + image.src} alt={image.alt}></img>
-          ))} */}
+          <button className='close-button' onClick={()=>{setOpenModal(false)}}>Close</button>
         </Modal>
       ) : (
         ''

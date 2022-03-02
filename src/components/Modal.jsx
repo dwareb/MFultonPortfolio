@@ -11,7 +11,6 @@ const Modal = ({ setOpenModal, children }) => {
           setOpenModal(false);
         }}
       />
-    <button className='close-button' onClick={()=>{setOpenModal(false)}}>Close</button>
     </div>
   );
 };

@@ -7,17 +7,23 @@ const Slideshow = ({ content }) => {
 
   return (
     <div className="slide-show">
-        <div className='slide-port'>
+      <div className="slide-port">
         <img
           className="slide-image"
           src={process.env.PUBLIC_URL + content.images[img_index].src}
           alt={content.images[img_index].alt}
           title={content.images[img_index].alt}
-          ></img>
+        ></img>
+      </div>
+      <div className="thumbs-box">
+        <div className="slide-thumbnails">
+          <ThumbnailBar
+            images={content.images}
+            index={img_index}
+            update_index={setImageIndex}
+          ></ThumbnailBar>
         </div>
-        <div className='slide-thumbnails'>
-          <ThumbnailBar images={content.images} index={img_index} update_index={setImageIndex}></ThumbnailBar>
-        </div>
+      </div>
     </div>
   );
 };
