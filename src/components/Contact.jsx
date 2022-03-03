@@ -24,6 +24,7 @@ const Contact = () => {
         );
         setSendSuccess(true);
         setOpenModal(true);
+        document.getElementById("contact-form").reset()
       } else {
         response.json().then((data) => {
           if (Object.hasOwn(data, 'errors')) {
@@ -46,7 +47,7 @@ const Contact = () => {
     }
   };
   return (
-    <form className="main-area form-body" onSubmit={handleSubmit}>
+    <form className="main-area form-body" id="contact-form" onSubmit={handleSubmit}>
       <h1 className="form-header">Contact Me</h1>
       <div className="form-field">
         <label htmlFor="name" className="input-label">
