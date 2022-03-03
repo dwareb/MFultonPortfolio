@@ -19,8 +19,9 @@
 .thumbs-box{
   position: absolute;
   display: grid;
-  width: 100%;
+  width: 100vw;
   top: 80%;
+  left: 0;
 }
 .slide-thumbnails{
   margin: auto;
