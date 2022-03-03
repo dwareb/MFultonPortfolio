@@ -10,6 +10,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar nav-bar base">
+      <h1 className={(expand ? 'active ': '') + 'hamburger'} onClick={handleExpand}>🍔</h1>
       <img
         src={process.env.PUBLIC_URL + '/images/mflogolight.png'}
         height="50"

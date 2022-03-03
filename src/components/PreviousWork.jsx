@@ -10,13 +10,6 @@ const PreviousWork = () => {
         <div className="column">
           <ArticleDark className="article-body" heading="Work Experience">
             <p>For the last 10 years I've worked for Intel here in Oregon.</p>
-            <img
-              className="resume-img"
-              src={process.env.PUBLIC_URL + '/images/intellogo.png'}
-              alt="Intel Corporate Logo"
-              text="Intel"
-              style={{ width: 200 }}
-            />
             <p>
               Starting out I worked in the chip factory as a technician where I
               learned tons of skills running performing maintenance on equipment
@@ -30,14 +23,21 @@ const PreviousWork = () => {
               technical support for the software that the factory is built on.
               Here I learned how to troubleshoot a vast array of issues on
               software systems as diverse as you might imagine. Systems include
-              databases, networking, and custom software that is under constant
-              development of all varieties within a semiconductor factory. Here
-              I am team lead, and have been responsible for personally training
-              my entire shift up to being extremely successful. Additionally
-              I've driven cultural changes that empower my co-workers to be able
-              to more effectively execute on their job via elimination of siloed
+              networking, operating systems, and custom software of all
+              varieties that is under constant development. In this position I
+              am team lead, and have been responsible for personally training my
+              entire shift up to being extremely successful. Additionally I've
+              driven cultural changes that empower my co-workers to be able to
+              more effectively execute on their job via elimination of siloed
               knowledge and skills.
             </p>
+            <img
+              className="resume-img"
+              src={process.env.PUBLIC_URL + '/images/intellogo.png'}
+              alt="Intel Corporate Logo"
+              text="Intel"
+              style={{ width: 200 }}
+            />
           </ArticleDark>
           <Article className="article-body" heading="Education">
             <p>

@@ -6,6 +6,7 @@ import Contact from './components/Contact';
 import About from './components/About';
 import PreviousWork from './components/PreviousWork';
 import Projects from './components/Projects';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           </Routes>
         </div>
       </Router>
+      <Footer/>
     </div>
   );
 }
