@@ -1,6 +1,8 @@
+//Main application page. Using state variable for navigation now.
+
 import './App.css';
 import './styles/Background.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Contact from './components/Contact';
 import About from './components/About';
@@ -9,23 +11,18 @@ import Projects from './components/Projects';
 import Footer from './components/Footer';
 
 function App() {
+  //Location state variable for determining which page should be rendered.
+  const [location, setLocation] = useState('about');
+
   return (
     <div className="main-window">
-      <Router>
-        <Navbar />
-        <div className="main-area">
-          <Routes>
-            <Route path="/MFultonPortfolio/" element={<About />} />
-            <Route path="/MFultonPortfolio/About" element={<About />} />
-            <Route
-              path="/MFultonPortfolio/previouswork"
-              element={<PreviousWork />}
-            />
-            <Route path="/MFultonPortfolio/Projects" element={<Projects />} />
-            <Route path="/MFultonPortfolio/Contact" element={<Contact />} />
-          </Routes>
-        </div>
-      </Router>
+      <Navbar location={location} setLocation={setLocation} />
+      <div className="main-area">
+        {location === 'about' ? <About /> : ''}
+        {location === 'previouswork' ? <PreviousWork /> : ''}
+        {location === 'projects' ? <Projects /> : ''}
+        {location === 'contact' ? <Contact /> : ''}
+      </div>
       <Footer/>
     </div>
   );

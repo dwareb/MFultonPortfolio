@@ -1,8 +1,11 @@
+//Navigation Bar. Shrinks when window gets small.
+//Doesn't change pages, just uses the location and setLocation
+//state variables to update which page is rendered.
+
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
 import '../styles/Navbar.css';
 
-const Navbar = () => {
+const Navbar = ({ location, setLocation }) => {
   const [expand, setExpand] = useState(false);
 
   const handleExpand = () => setExpand(!expand);
@@ -10,7 +13,12 @@ const Navbar = () => {
 
   return (
     <nav className="navbar nav-bar base">
-      <h1 className={(expand ? 'active ': '') + 'hamburger'} onClick={handleExpand}>🍔</h1>
+      <h1
+        className={(expand ? 'active ' : '') + 'hamburger'}
+        onClick={handleExpand}
+      >
+        🍔
+      </h1>
       <img
         src={process.env.PUBLIC_URL + '/images/mflogolight.png'}
         height="50"
@@ -28,40 +36,50 @@ const Navbar = () => {
       />
       <ul className={(expand ? 'active ' : '') + 'nav-menu navbar-nav mr-auto'}>
         <li className="list-item">
-          <NavLink
-            className="nav-link"
-            to="/MFultonPortfolio/"
-            onClick={closeMenu}
+          <span
+            className={(location === 'about' ? 'active ' : '') + 'nav-link'}
+            onClick={() => {
+              setLocation('about');
+              closeMenu();
+            }}
           >
             About
-          </NavLink>
+          </span>
         </li>
         <li className="list-item">
-          <NavLink
-            className="nav-link"
-            to="/MFultonPortfolio/previouswork"
-            onClick={closeMenu}
+          <span
+            className={
+              (location === 'previouswork' ? 'active ' : '') + 'nav-link'
+            }
+            onClick={() => {
+              setLocation('previouswork');
+              closeMenu();
+            }}
           >
             Previous Work / Resume
-          </NavLink>
+          </span>
         </li>
         <li className="list-item">
-          <NavLink
-            className="nav-link"
-            to="/MFultonPortfolio/projects"
-            onClick={closeMenu}
+          <span
+            className={(location === 'projects' ? 'active ' : '') + 'nav-link'}
+            onClick={() => {
+              setLocation('projects');
+              closeMenu();
+            }}
           >
             Projects
-          </NavLink>
+          </span>
         </li>
         <li className="list-item">
-          <NavLink
-            className="nav-link"
-            to="/MFultonPortfolio/contact"
-            onClick={closeMenu}
+          <span
+            className={(location === 'contact' ? 'active ' : '') + 'nav-link'}
+            onClick={() => {
+              setLocation('contact');
+              closeMenu();
+            }}
           >
             Contact
-          </NavLink>
+          </span>
         </li>
       </ul>
     </nav>

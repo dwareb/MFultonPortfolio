@@ -1,3 +1,7 @@
+//This component takes a picture, makes it round and has a series
+//Of spinning gears around it. Which is what those needless divs are,
+//Spokes of the gears which are animated with CSS.
+
 import React from 'react';
 import '../styles/Global.css';
 import '../styles/Portrait.css';

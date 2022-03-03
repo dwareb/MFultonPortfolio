@@ -1,3 +1,5 @@
+//Main page that acts mostly as a resume.
+
 import React from 'react';
 import Article from './Article';
 import ArticleDark from './ArticleDark';
@@ -19,7 +21,7 @@ const PreviousWork = () => {
             </p>
             <p>
               After about 4 years working in the factory I was looking for a
-              change of pase, and got a job in the Automation department doing
+              change of pace, and got a job in the Automation department doing
               technical support for the software that the factory is built on.
               Here I learned how to troubleshoot a vast array of issues on
               software systems as diverse as you might imagine. Systems include
@@ -42,12 +44,12 @@ const PreviousWork = () => {
           <Article className="article-body" heading="Education">
             <p>
               After High School I went to PCC and began work on a CS degree.
-              Running out of money, I decided to go into work as a technician.
-              Since then I decided to finish up a Bachelor's Degree in Computer
-              Science. Since returning to school in 2020 after about a 10 year
-              hiatus, I've maintained straight A's across all my classes despite
-              working full time along with the coursework. But here's my
-              relevant credentials:
+              After completing an associates degree, I decided to go into work
+              as a technician. Since then I decided to finish up a Bachelor's
+              Degree in Computer Science. Since returning to school in 2020
+              after about a 10 year hiatus, I've maintained straight A's across
+              all my classes despite working full time along with the
+              coursework. But here's my relevant credentials:
             </p>
             <h3 style={{ fontWeight: 700 }}>Portland Community College:</h3>
             <p>
@@ -73,8 +75,8 @@ const PreviousWork = () => {
               My biggest hobby is picking up a new skill, and quickly becoming
               proficient in it. As a result I've dabbled in a wide array of
               things, not all of which are technical skills. Though as a well
-              rounded person its important to explore what you like. I've picked
-              up skills including but not limited to the following:
+              rounded person it's important to explore what you like. I've
+              picked up skills including but not limited to the following:
             </p>
             <ul>
               <li>
@@ -111,7 +113,8 @@ const PreviousWork = () => {
           <ArticleDark className="article-body" heading="Aspirations">
             <p>
               At this point in my life, my largest aspiration is to finish my
-              Computer Science Degree and work towards becoming a professional
+              Computer Science Degree and work towards becoming a{' '}
+              <span id="professional">professional </span>
               software developer. I'm likely to start working as an Operations
               Engineer in the near future, but I'd like to pursue a Master's
               Degree and get more into the development end of things.

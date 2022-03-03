@@ -45,7 +45,7 @@
   border-bottom: 4px dashed var(--light-blue);
 }
 
-.hamburger{
+.hamburger {
   display: none;
 }
 
@@ -99,19 +99,19 @@
     border-left: 4px dashed var(--light-blue);
     border-right: 4px dashed var(--light-blue);
   }
-  
-  .hamburger{
+
+  .hamburger {
     display: flex;
-    transition: all 0.5s ;
+    transition: all 0.5s;
     margin: 3px 0px 0px 10px;
     font-size: 40px;
   }
 
-  .hamburger:hover{
+  .hamburger:hover {
     cursor: pointer;
   }
 
-  .hamburger.active{
+  .hamburger.active {
     transform: rotate(0.25turn);
   }
 }

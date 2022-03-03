@@ -1,3 +1,5 @@
+//Main about page. Not a reusable component.
+
 import React from 'react';
 import Portrait from './Portrait';
 

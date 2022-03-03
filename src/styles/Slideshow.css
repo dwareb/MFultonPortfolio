@@ -1,28 +1,28 @@
-.slide-show{
+.slide-show {
   display: grid;
   grid-template-rows: 100;
   justify-content: center;
   align-items: center;
 }
 
-.slide-image{
+.slide-image {
   width: 100vh;
   max-width: 100vw;
 }
 
-.slide-port{
+.slide-port {
   display: grid;
   align-items: center;
-  margin:auto;
+  margin: auto;
 }
 
-.thumbs-box{
+.thumbs-box {
   position: absolute;
   display: grid;
   width: 100vw;
   top: 80%;
   left: 0;
 }
-.slide-thumbnails{
+.slide-thumbnails {
   margin: auto;
 }
