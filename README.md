@@ -43,6 +43,6 @@ npm run deploy
 
 
 ## Additional sources
-I used coolors.co for mapping out my color scheme.
-I used the following youtube guide as inspiration for my slideshow thumbnail bar: https://youtu.be/-VKXgsrLEjw
-The contact page is powered by the formspree api.
+* I used coolors.co for mapping out my color scheme.
+* I used the following youtube guide as inspiration for my slideshow thumbnail bar: https://youtu.be/-VKXgsrLEjw
+* The contact page is powered by the formspree api.
