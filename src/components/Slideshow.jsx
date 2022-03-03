@@ -1,8 +1,12 @@
-import React, { useEffect, useState } from 'react';
+//This component takes an array of images which are objects that include
+//a "src" and "alt" property. They are then displayed in a slideshow, with a
+//thumbnail preview for selecting the image.
+
+import React, { useState } from 'react';
 import '../styles/Slideshow.css';
 import ThumbnailBar from './ThumbnailBar';
 
-const Slideshow = ({ content }) => {
+const Slideshow = ({ images }) => {
   const [img_index, setImageIndex] = useState(0);
 
   return (
@@ -10,15 +14,15 @@ const Slideshow = ({ content }) => {
       <div className="slide-port">
         <img
           className="slide-image"
-          src={process.env.PUBLIC_URL + content.images[img_index].src}
-          alt={content.images[img_index].alt}
-          title={content.images[img_index].alt}
+          src={process.env.PUBLIC_URL + images[img_index].src}
+          alt={images[img_index].alt}
+          title={images[img_index].alt}
         ></img>
       </div>
       <div className="thumbs-box">
         <div className="slide-thumbnails">
           <ThumbnailBar
-            images={content.images}
+            images={images}
             index={img_index}
             update_index={setImageIndex}
           ></ThumbnailBar>

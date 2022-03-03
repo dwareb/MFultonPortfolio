@@ -1,3 +1,6 @@
+//Basic modal. Requires function passed in that controls its being open,
+//so clicking off the content closes the modal.
+
 import React from 'react';
 import '../styles/Modal.css';
 

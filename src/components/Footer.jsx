@@ -1,3 +1,5 @@
+//Simple footer, include github link and copyright notice.
+
 import React from 'react';
 import '../styles/Footer.css';
 

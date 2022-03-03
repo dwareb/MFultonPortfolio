@@ -18,7 +18,7 @@
   padding-bottom: 3em;
 }
 @media screen and (max-width: 800px) {
-  .main-window{
+  .main-window {
     padding-top: 0;
   }
 }

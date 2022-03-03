@@ -1,15 +1,22 @@
+//Not reusable. Simple contact card using formspree API to send the emails.
+
 import React, { useRef, useState } from 'react';
 import '../styles/Contact.css';
 import Modal from './Modal';
 
 const Contact = () => {
+  //Following three state variables control the popup and its contents for form submit, success and failure
   const [openModal, setOpenModal] = useState(false);
   const [sendSuccess, setSendSuccess] = useState(false);
   const [modalMessage, setModalMessage] = useState('Empty');
 
+  //Async function to call formspree api.
   const handleSubmit = async (event) => {
     event.preventDefault();
+    //Standard formdata object from the form.
     const data = new FormData(event.target);
+
+    //Try posting data to API
     try {
       const response = await fetch('https://formspree.io/f/mleznbvl', {
         method: 'POST',
@@ -18,13 +25,17 @@ const Contact = () => {
           Accept: 'application/json',
         },
       });
+
+      //Success
       if (response.ok) {
         setModalMessage(
           "Thanks for contacting me. I'm pretty good about getting to my email, so expect to hear from me soon."
         );
         setSendSuccess(true);
         setOpenModal(true);
-        document.getElementById("contact-form").reset()
+        document.getElementById('contact-form').reset();
+
+        //Failure
       } else {
         response.json().then((data) => {
           if (Object.hasOwn(data, 'errors')) {
@@ -40,6 +51,7 @@ const Contact = () => {
           }
         });
       }
+      //Catch API not responding, or responding with error
     } catch (error) {
       setModalMessage('Message send got no reply');
       setSendSuccess(false);
@@ -47,7 +59,11 @@ const Contact = () => {
     }
   };
   return (
-    <form className="main-area form-body" id="contact-form" onSubmit={handleSubmit}>
+    <form
+      className="main-area form-body"
+      id="contact-form"
+      onSubmit={handleSubmit}
+    >
       <h1 className="form-header">Contact Me</h1>
       <div className="form-field">
         <label htmlFor="name" className="input-label">

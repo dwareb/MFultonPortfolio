@@ -3,11 +3,18 @@ import '../styles/Card.css';
 import Modal from './Modal';
 import Slideshow from './Slideshow';
 
-const Card = ({ children, extra_style = '', content }) => {
+//Card element to be replicated many times.
+//Content needs to be JSON. Can have the following data:
+//Title "title", image array "images[]" (can be single image, but should be an array),
+//The image array should be an object with two properties.
+//The source "src" and the alt text "alt"
+//Text Body "body", github link "link".
+
+const Card = ({ children, content }) => {
   const [openModal, setOpenModal] = useState(false);
 
   return (
-    <div className={'card-main ' + extra_style}>
+    <div className={'card-main'}>
       {content.title ? <h1 className="card-title">{content.title}</h1> : ''}
       {content.images ? (
         <img
@@ -32,8 +39,15 @@ const Card = ({ children, extra_style = '', content }) => {
       )}
       {openModal ? (
         <Modal setOpenModal={setOpenModal}>
-          <Slideshow content={content}></Slideshow>
-          <button className='close-button' onClick={()=>{setOpenModal(false)}}>Close</button>
+          <Slideshow images={content.images}></Slideshow>
+          <button
+            className="close-button"
+            onClick={() => {
+              setOpenModal(false);
+            }}
+          >
+            Close
+          </button>
         </Modal>
       ) : (
         ''
