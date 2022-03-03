@@ -4,6 +4,7 @@
   border-radius: 20px;
   box-shadow: 3px 3px 2px var(--dark-gray);
   border: 1px solid var(--dark-gray);
+  margin-top: 20px;
 }
 .form-header{
   color: var(--white);
