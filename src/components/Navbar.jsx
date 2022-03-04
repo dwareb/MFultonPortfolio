@@ -13,12 +13,12 @@ const Navbar = ({ location, setLocation }) => {
 
   return (
     <nav className="navbar nav-bar base">
-      <h1
+      <button
         className={(expand ? 'active ' : '') + 'hamburger'}
         onClick={handleExpand}
       >
         🍔
-      </h1>
+      </button>
       <img
         src={process.env.PUBLIC_URL + '/images/mflogolight.png'}
         height="50"
@@ -36,7 +36,7 @@ const Navbar = ({ location, setLocation }) => {
       />
       <ul className={(expand ? 'active ' : '') + 'nav-menu navbar-nav mr-auto'}>
         <li className="list-item">
-          <span
+          <button
             className={(location === 'about' ? 'active ' : '') + 'nav-link'}
             onClick={() => {
               setLocation('about');
@@ -44,10 +44,10 @@ const Navbar = ({ location, setLocation }) => {
             }}
           >
             About
-          </span>
+          </button>
         </li>
         <li className="list-item">
-          <span
+          <button
             className={
               (location === 'previouswork' ? 'active ' : '') + 'nav-link'
             }
@@ -57,10 +57,10 @@ const Navbar = ({ location, setLocation }) => {
             }}
           >
             Previous Work / Resume
-          </span>
+          </button>
         </li>
         <li className="list-item">
-          <span
+          <button
             className={(location === 'projects' ? 'active ' : '') + 'nav-link'}
             onClick={() => {
               setLocation('projects');
@@ -68,10 +68,10 @@ const Navbar = ({ location, setLocation }) => {
             }}
           >
             Projects
-          </span>
+          </button>
         </li>
         <li className="list-item">
-          <span
+          <button
             className={(location === 'contact' ? 'active ' : '') + 'nav-link'}
             onClick={() => {
               setLocation('contact');
@@ -79,7 +79,7 @@ const Navbar = ({ location, setLocation }) => {
             }}
           >
             Contact
-          </span>
+          </button>
         </li>
       </ul>
     </nav>
