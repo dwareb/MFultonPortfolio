@@ -14,14 +14,6 @@ const card_data = {
       link: 'https://github.com/PlaThyme/PlaThyme',
     },
     {
-      id: 'card2',
-      title: 'Eight Queens Solver',
-      body: 'This is a genetic algorithm that solves the eight queens problem. This is one of the more fun projects I had to solve in my AI coursework.',
-      images: [{ src: '/images/8queens.jpg', alt: 'Eight queens board' }],
-      video: null,
-      link: 'https://github.com/dwareb/geneightqueens',
-    },
-    {
       id: 'card3',
       title: 'Snake Terminal Game',
       images: [{ src: '/images/snake.gif', alt: 'Terminal Snake Game' }],
@@ -30,12 +22,28 @@ const card_data = {
       link: 'https://github.com/dwareb/snake',
     },
     {
+      id: 'card21',
+      title: 'K and Fuzzy C means',
+      images: [{ src: '/images/kmeans1.gif', alt: 'Clustering Analysis with 3 centroids' },{ src: '/images/kmeans2.gif', alt: 'Clustering Analysis with 5 centroids'},{ src: '/images/kmeans3.gif', alt: 'Clustering Analysis with 7 centroids'}],
+      body: 'Machine Learning algorithm used for unsupervised learning and cluster analysis / categorization. This project explored two slightly different methods of categorization... Also made for nice visualizations.',
+      video: null,
+      link: 'https://github.com/dwareb/k-means/',
+    },
+    {
       id: 'card4',
       title: 'NLP Sentiment Analysis',
       images: [{ src: '/images/tomatoes.jpg', alt: 'Tomatoes' }],
       body: 'For an AI project I worked on a natural language processing algorithm for sentiment analysis. The data set we used was movie reviews. The project involved comparing Naive Bayes and a Recurrent Neural Network.',
       video: null,
       link: 'https://github.com/dwareb/CS441_Final_NLP',
+    },
+    {
+      id: 'card2',
+      title: 'Eight Queens Solver',
+      body: 'This is a genetic algorithm that solves the eight queens problem. This is one of the more fun projects I had to solve in my AI coursework.',
+      images: [{ src: '/images/8queens.jpg', alt: 'Eight queens board' }],
+      video: null,
+      link: 'https://github.com/dwareb/geneightqueens',
     },
     {
       id: 'card5',
