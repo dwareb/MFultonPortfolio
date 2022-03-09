@@ -36,6 +36,8 @@
   text-decoration: none;
   color: var(--white);
   transition: all 0s;
+  width: 90%;
+  margin:auto
 }
 
 .nav-link:visited {
