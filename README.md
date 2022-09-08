@@ -28,13 +28,13 @@ npm install
 To run the site for testing you can run the following command
 
 ```
-node start
+npm start
 ```
 After that, the website should be available at `localhost:3000`, and should update live as changes are mode.
 
 To build the site run the following:
 ```
-node run build
+npm run build
 ```
 Finally to deploy the following command:
 ```
