@@ -32,12 +32,12 @@
 .nav-link {
   border: none;
   background-color: none;
-  background: none;     
+  background: none;
   text-decoration: none;
   color: var(--white);
   transition: all 0s;
-  width: 90%;
-  margin:auto
+  width: 100%;
+  margin: auto;
 }
 
 .nav-link:visited {
@@ -49,7 +49,7 @@
   border-bottom: 4px dashed var(--light-blue);
 }
 
-.nav-link:focus{
+.nav-link:focus {
   color: var(--light-blue);
   border-bottom: 4px dashed var(--light-blue);
 }
@@ -88,6 +88,7 @@
     top: 70px;
     left: -100%;
     opacity: 0;
+    padding-top: 75px;
     transition: all 0.5s ease;
     background-color: var(--dark-gray);
     min-height: 35vh;
@@ -99,6 +100,11 @@
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
+  }
+
+
+  .nav-link{
+    max-width: 90%;
   }
 
   .nav-link:hover {
@@ -115,7 +121,7 @@
 
   .hamburger {
     background: none;
-    border: none; 
+    border: none;
     display: flex;
     transition: all 0.5s;
     margin: 3px 0px 0px 10px;

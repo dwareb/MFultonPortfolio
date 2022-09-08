@@ -232,6 +232,19 @@ const card_data = {
       video: null,
       link: null,
     },
+    {
+      id: 'card21',
+      title: 'Antique Coffee Grinder',
+      images: [
+        { src: '/images/grinder1.jpg', alt: 'After restoration' },
+        { src: '/images/grinder2.jpg', alt: 'Before restoration' },
+        { src: '/images/grinder3.jpg', alt: 'View of the rust' },
+        { src: '/images/grinder4.jpg', alt: 'No more rust' },
+      ],
+      body: 'Bought an antique coffee grinder and restored it.',
+      video: null,
+      link: null,
+    },
   ],
 };
 
