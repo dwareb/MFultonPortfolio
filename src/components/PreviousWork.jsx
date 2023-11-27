@@ -11,7 +11,7 @@ const PreviousWork = () => {
       <section className="work-area">
         <div className="column">
           <ArticleDark className="article-body" heading="Work Experience">
-            <p>For the last 10 years I've worked for Intel here in Oregon.</p>
+            <p>For the last 12 years I've worked for Intel here in Oregon.</p>
             <p>
               Starting out I worked in the chip factory as a technician where I
               learned tons of skills running performing maintenance on equipment
@@ -32,6 +32,12 @@ const PreviousWork = () => {
               driven cultural changes that empower my co-workers to be able to
               more effectively execute on their job via elimination of siloed
               knowledge and skills.
+            </p>
+            <p>
+              When I got my Computer Science Dregree from PSU I also secured a
+              promotion within my deparment at Intel to become an Automation
+              oncall Engineer, where I have been responsible for maintaining
+              factory automation systems.
             </p>
             <img
               className="resume-img"
@@ -64,8 +70,7 @@ const PreviousWork = () => {
               style={{ width: 300 }}
             />
             <p>
-              Bachelor's In Computer Science, in progress. Expect to graduate
-              Spring 2022.
+              In Spring of 2022 I got my Bachelor's In Computer Science from Portland State University.
             </p>
           </Article>
         </div>
@@ -112,12 +117,12 @@ const PreviousWork = () => {
           </Article>
           <ArticleDark className="article-body" heading="Aspirations">
             <p>
-              At this point in my life, my largest aspiration is to finish my
-              Computer Science Degree and work towards becoming a{' '}
-              <span id="professional">professional </span>
-              software developer. I'm likely to start working as an Operations
-              Engineer in the near future, but I'd like to pursue a Master's
-              Degree and get more into the development end of things.
+              Now that I have my Computer Science degree I would like to get 
+              a{' '} <span id="professional">professional </span>
+              software developer position. My wife and I recently bought a
+              house, so things are quite busy at the moment. However, soon I
+              would like to pursue a Master's Degree and get deeper into 
+              development end of things.
             </p>
           </ArticleDark>
         </div>

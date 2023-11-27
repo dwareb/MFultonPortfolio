@@ -245,6 +245,22 @@ const card_data = {
       video: null,
       link: null,
     },
+    {
+      id: 'card22',
+      title: 'The Shag Shack',
+      images: [
+        { src: '/images/plumbbefore.jpg', alt: 'Plumbing Leak Needing Repair' },
+        { src: '/images/plumbafter.jpg', alt: 'Repaired plumbing vent' },
+        { src: '/images/officebefore.jpg', alt: 'Our office before we fixed it up' },
+        { src: '/images/officeafter.jpg', alt: 'Office after we fixed it up' },
+        { src: '/images/drainage.jpg', alt: 'Installed drainage to fix water in crawl space' },
+        { src: '/images/bathbefore.jpg', alt: 'Bathroom before fixing Up' },
+        { src: '/images/bathafter.jpg', alt: 'Bathroom after fixing it up' },
+      ],
+      body: 'In Spring of 2023 we bought our first home. It\'s a real fixer upper, and working on it is a huge undertaking',
+      video: null,
+      link: null,
+    },
   ],
 };
 
