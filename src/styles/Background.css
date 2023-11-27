@@ -11,16 +11,14 @@
     var(--khaki) 95%,
     var(--dark-khaki) 95%
   );
-  min-height: calc(100vh - 70px);
+  min-height: calc(100vh);
+  overflow: hidden;
+  position: relative;
+  padding-top: 75px;
+  padding-bottom: 3em;
 }
-
-.main-area{
-  margin-top: 70px;
-}
-
 @media screen and (max-width: 800px) {
-  .main-area{
-    margin-top: 0px;
-    min-height: calc(100vh - 70px);
+  .main-window {
+    padding-top: 0;
   }
 }

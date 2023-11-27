@@ -1,0 +1,33 @@
+.heading {
+  text-align: center;
+}
+
+.main-area {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-grid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+@media screen and (max-width: 1600px) {
+  .card-grid {
+    grid-template-columns: 33% 33% 33%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .card-grid {
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .card-grid {
+    grid-template-columns: 100%;
+  }
+}

@@ -8,7 +8,7 @@
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 10;
+  z-index: 5;
 }
 
 .nav-logo {
@@ -30,19 +30,36 @@
 }
 
 .nav-link {
+  border: none;
+  background-color: none;
+  background: none;
   text-decoration: none;
   color: var(--white);
+  transition: all 0s;
+  width: 100%;
+  margin: auto;
 }
 
 .nav-link:visited {
   color: var(--white);
 }
 .nav-link:hover {
+  cursor: pointer;
   color: var(--light-blue);
   border-bottom: 4px dashed var(--light-blue);
 }
+
+.nav-link:focus {
+  color: var(--light-blue);
+  border-bottom: 4px dashed var(--light-blue);
+}
+
 .nav-link.active {
   border-bottom: 4px dashed var(--light-blue);
+}
+
+.hamburger {
+  display: none;
 }
 
 @media screen and (max-width: 800px) {
@@ -55,10 +72,12 @@
   .nav-logo {
     display: none;
   }
-  
+
   .nav-bar {
     width: 100%;
-    position:relative;
+    position: relative;
+    z-index: 8;
+    justify-content: space-between;
   }
 
   .nav-menu {
@@ -69,19 +88,24 @@
     top: 70px;
     left: -100%;
     opacity: 0;
+    padding-top: 75px;
     transition: all 0.5s ease;
     background-color: var(--dark-gray);
     min-height: 35vh;
-    z-index: 1;
+    z-index: -1;
   }
 
   .nav-menu.active {
-    left: 0;
+    left: 0px;
     opacity: 1;
     transition: all 0.5s ease;
     z-index: 1;
   }
 
+
+  .nav-link{
+    max-width: 90%;
+  }
 
   .nav-link:hover {
     color: var(--light-blue);
@@ -93,6 +117,23 @@
     border-bottom: none;
     border-left: 4px dashed var(--light-blue);
     border-right: 4px dashed var(--light-blue);
+  }
+
+  .hamburger {
+    background: none;
+    border: none;
+    display: flex;
+    transition: all 0.5s;
+    margin: 3px 0px 0px 10px;
+    font-size: 40px;
+  }
+
+  .hamburger:hover {
+    cursor: pointer;
+  }
+
+  .hamburger.active {
+    transform: rotate(0.25turn);
   }
 }
 

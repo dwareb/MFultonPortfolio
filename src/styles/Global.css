@@ -1,12 +1,12 @@
 :root {
-    --white: #ffffff;
-    --light-blue: #49B0FF;
-    --dark-gray: #2F2F2F;
-    --dark-khaki: #756D60;
-    --khaki: #BBAB91;
-    --light-khaki: #DDD5C8;
+  --white: #ffffff;
+  --light-blue: #49b0ff;
+  --dark-gray: #2f2f2f;
+  --dark-khaki: #756d60;
+  --khaki: #bbab91;
+  --light-khaki: #ddd5c8;
 }
 
-.base{
-    font-family: 'Rubik', sans-serif;
+.base {
+  font-family: 'Rubik', sans-serif;
 }
